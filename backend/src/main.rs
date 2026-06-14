@@ -1,11 +1,12 @@
 use std::{env, str::FromStr, sync::Arc, time::Duration};
 
-use anchor_lang::{InstructionData, ToAccountMetas};
+use anchor_lang::{InstructionData, ToAccountMetas, prelude::thiserror};
 use anyhow::{anyhow, Context, Result};
 use dotenvy::dotenv;
 use futures::StreamExt;
 use regex::Regex;
 use serde::Serialize;
+use sol_usd_oracle::check_id;
 use solana_client::{
     nonblocking::{pubsub_client::PubsubClient, rpc_client::RpcClient},
     rpc_response::RpcLogsResponse,
@@ -306,8 +307,29 @@ fn to_fixed_6(txt: &str) -> Result<u64> {
     // - "120.12" -> 120_120_000
     // - "0.000001" -> 1
     // Extra digits after the 6th decimal place should be truncated, not rounded.
-    let _ = txt;
-    todo!("student task: implement fixed-6 parser")
+    // let _ = txt;
+    // todo!("student task: implement fixed-6 parser")
+
+    let txt = txt.replace(" ", "");
+    if txt.is_empty() { 
+        return Err(anyhow!("Value must be non empty string"));
+    };
+    if !(txt.chars().all(|c| c.is_ascii_digit() || c == '.')) { 
+        return Err(anyhow!("Value must contains only digits or dot"));
+    };
+    
+    let split_vec: Vec<&str> = txt.split(".").collect();
+    if split_vec.len() > 2  { 
+        return Err(anyhow!("Value must contains only one dot"));
+    };
+
+    let float_val = txt.parse::<f64>().unwrap_or(0.0);
+    let float_val = float_val * (1_000_000 as f64);
+
+    let result = float_val as u64;
+
+    Ok(result)
+    
 }
 
 #[cfg(test)]
@@ -340,7 +362,7 @@ mod tests {
     fn to_fixed_6_truncates_fraction_to_six_digits() {
         // TODO(student): this assertion is intentionally wrong.
         // The parser is expected to truncate after 6 digits instead of rounding.
-        assert_eq!(to_fixed_6("1.1234569").unwrap(), 1_123_457);
+        assert_eq!(to_fixed_6("1.1234569").unwrap(), 1_123_456);
     }
 
     #[test]
