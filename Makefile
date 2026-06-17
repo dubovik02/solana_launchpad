@@ -21,7 +21,7 @@ build:
 deploy: build
 	cd program && anchor deploy --provider.cluster localnet
 
-# Devnet: переключись (solana config set-url devnet), пополни (solana airdrop 2), затем деплой обоих контрактов:
+# Devnet: переключись (solana config set --url devnet), пополни (solana airdrop 2), затем деплой обоих контрактов:
 deploy-devnet: deploy-oracle-devnet deploy-minter-devnet
 
 # Devnet: деплой только оракула или только минтера
