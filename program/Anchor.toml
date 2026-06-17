@@ -1,18 +1,18 @@
 [toolchain]
-package_manager = "yarn"
 anchor_version = "0.32.1"
+package_manager = "yarn"
 
 [features]
 resolution = true
 skip-lint = false
 
-[programs.localnet]
-sol_usd_oracle = "4cuvLFFqhaKnTHfeq2FtTUvgudRSe7wq982fA9PBUqBU"
-token_minter = "E5erGzaxgCwHqH7RjLXLGWziXj8CXpyN7zW6BRodfFnE"
-
 [programs.devnet]
-sol_usd_oracle = "4cuvLFFqhaKnTHfeq2FtTUvgudRSe7wq982fA9PBUqBU"
-token_minter = "E5erGzaxgCwHqH7RjLXLGWziXj8CXpyN7zW6BRodfFnE"
+sol_usd_oracle = "4dDFDva5s2kU8VenYKmih32kiY4xs9hd9thWAXSNZGkT"
+token_minter = "6c1P85dEeZNmEhojh5PrePr3mmWCfMhq25q2M3PyZQsZ"
+
+[programs.localnet]
+sol_usd_oracle = "4dDFDva5s2kU8VenYKmih32kiY4xs9hd9thWAXSNZGkT"
+token_minter = "6c1P85dEeZNmEhojh5PrePr3mmWCfMhq25q2M3PyZQsZ"
 
 [registry]
 url = "https://api.apr.dev"

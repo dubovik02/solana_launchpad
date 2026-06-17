@@ -97,3 +97,34 @@
 3. `cd program && node scripts/init-local.js` — скопировать `ORACLE_STATE_PUBKEY` в `backend/.env`
 4. `cd backend && cargo run`
 5. `cd frontend && npm run dev` — открыть в браузере и покликать.
+
+
+
+## Метрики проделанной работы
+
+### sol_usd_oracle program_id
+4dDFDva5s2kU8VenYKmih32kiY4xs9hd9thWAXSNZGkT
+
+### token_minter program_id
+6c1P85dEeZNmEhojh5PrePr3mmWCfMhq25q2M3PyZQsZ
+
+### ORACLE_STATE_PUBKEY
+G5s8r6cPaXHWBHwzaosNhK7i3AGBz796h3i55z6jcy3u
+
+### Токены, адреса транзакций
+
+#### Минтинг токена
+https://explorer.solana.com/tx/2TaVKSNPLRm7Rrfr2JLAwAkQ1EGsPHzY1S6oaBeHdcHFTvLurbNHLKA39mgsZcKL6avn4ejXZmCawYTf8mD18myN?cluster=devnet
+
+#### Токен
+oBtbG8b32f6EbfJE2euUAatRoC1Qr1m19fpnTyrfD4h
+
+https://explorer.solana.com/address/oBtbG8b32f6EbfJE2euUAatRoC1Qr1m19fpnTyrfD4h?cluster=devnet
+
+#### Перевод на кошелек (1.0)
+https://explorer.solana.com/tx/ipmrBj4GETygN6oLkJhxRkVKpwR6njpZiV1GUUrzD5bdk9nNSU2fE2kcVzojdaUp3N9uRv54jifoMXgvzTvRQMx?cluster=devnet
+
+#### Перевод на кошелек (0.5)
+https://explorer.solana.com/tx/4shuoRAfWNTZp2KzoTuE4Vopc8Sbca4JmX89QLEZQF8K1F3QSsDCvMie8B88GuHdT3eW5DpPeM9or9axK8JwGTKq?cluster=devnet
+
+
