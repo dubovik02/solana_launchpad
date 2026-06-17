@@ -113,11 +113,22 @@ G5s8r6cPaXHWBHwzaosNhK7i3AGBz796h3i55z6jcy3u
 
 ### Токены, адреса транзакций
 
-#### Минтинг токена
-https://explorer.solana.com/tx/2TaVKSNPLRm7Rrfr2JLAwAkQ1EGsPHzY1S6oaBeHdcHFTvLurbNHLKA39mgsZcKL6avn4ejXZmCawYTf8mD18myN?cluster=devnet
+#### Минтинг токенов
 
+##### TreasuryCoin
+https://explorer.solana.com/tx/2TaVKSNPLRm7Rrfr2JLAwAkQ1EGsPHzY1S6oaBeHdcHFTvLurbNHLKA39mgsZcKL6avn4ejXZmCawYTf8mD18myN?cluster=devnet
 #### Токен
 oBtbG8b32f6EbfJE2euUAatRoC1Qr1m19fpnTyrfD4h
+
+##### SmartCoin
+https://explorer.solana.com/tx/59gKsfUkp2qvhYY9bfiHFzsT27fL16LyRskTnjMDc7Hfp5Xq4AEfezEdd7NURdAzewn1DSmx2SCSJcVrpRMibZfH?cluster=devnet
+#### Токен
+H56UPzPpN3wpZFvbZE7kDqZe7bqvKuzHYawyy1KyFsxB
+
+##### RuCoin
+https://explorer.solana.com/tx/4X5Jd3BueU6Vbs3HCGaMwHGRnSxyFFHRMerQJRECA5RbJ3qvnhfB47REqTawC2m153DZe4FRBThooP9AgozXbYyp?cluster=devnet
+#### Токены
+FX9MaJWJWc9KvhbLXsvet11tG8zXx9E9eJZAZ8ThDM83
 
 https://explorer.solana.com/address/oBtbG8b32f6EbfJE2euUAatRoC1Qr1m19fpnTyrfD4h?cluster=devnet
 
